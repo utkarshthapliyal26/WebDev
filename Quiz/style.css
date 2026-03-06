@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.option-btn {
+    display: block;
+    margin: 5px 0;
+    padding: 6px;
+    background: #e0e0e0;
+    border: none;
+    width: 100%;
+}
+
+.option-btn:hover {
+    background: #d0d0d0;
+}
+
+.hide {
+    display: none;
+}

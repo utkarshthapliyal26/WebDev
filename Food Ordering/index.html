@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuickBite - Order Delicious Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍽 QuickBite</h1>
+    <p>Delicious Food Delivered To You</p>
+</header>
+
+<section class="menu">
+    <h2>Our Menu</h2>
+
+    <div class="food-container">
+
+        <div class="food-card">
+            <img src="https://www.inspiredtaste.net/wp-content/uploads/2023/08/Cheese-Pizza-2-1200-1024x683.jpg" alt="Pizza">
+            <h3>Cheese Pizza</h3>
+            <p>₹250</p>
+            <button onclick="addToCart('Cheese Pizza',250)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Burger">
+            <h3>Veg Burger</h3>
+            <p>₹150</p>
+            <button onclick="addToCart('Veg Burger',150)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0" alt="Pasta">
+            <h3>White Sauce Pasta</h3>
+            <p>₹200</p>
+            <button onclick="addToCart('White Sauce Pasta',200)">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Salad">
+            <h3>Healthy Salad</h3>
+            <p>₹180</p>
+            <button onclick="addToCart('Healthy Salad',180)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="cart-section">
+    <h2>🛒 Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: ₹<span id="total">0</span></h3>
+    <button class="order-btn" onclick="placeOrder()">Place Order</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
